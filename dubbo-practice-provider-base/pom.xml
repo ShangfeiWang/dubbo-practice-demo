@@ -14,6 +14,15 @@
     <version>1.0.0-SNAPSHOT</version>
 
     <dependencies>
+
+        <dependency>
+            <groupId>com.wsf</groupId>
+            <artifactId>dubbo-practice-component</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
         <dependency>
             <groupId>com.wsf</groupId>
             <artifactId>dubbo-practice-client</artifactId>

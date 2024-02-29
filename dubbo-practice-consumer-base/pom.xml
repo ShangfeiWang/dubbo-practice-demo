@@ -16,6 +16,15 @@
     <dependencies>
         <dependency>
             <groupId>com.wsf</groupId>
+            <artifactId>dubbo-practice-component</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.wsf</groupId>
             <artifactId>dubbo-practice-client</artifactId>
         </dependency>
 

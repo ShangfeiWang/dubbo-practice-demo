@@ -1,0 +1,2 @@
+dubboProviderTraceFilter=com.wsf.component.filter.DubboProviderTraceFilter
+dubboConsumerTraceFilter=com.wsf.component.filter.DubboConsumerTraceFilter

@@ -20,6 +20,7 @@
         <module>dubbo-practice-consumer-base</module>
         <module>dubbo-practice-provider-base</module>
         <module>dubbo-practice-client</module>
+        <module>dubbo-practice-component</module>
     </modules>
 
     <properties>
@@ -31,10 +32,29 @@
         <curator-recipes.version>5.1.0</curator-recipes.version>
         <dubbo-practice-client>1.0.0-SNAPSHOT</dubbo-practice-client>
         <spring-boot-starter-web.version>2.7.17</spring-boot-starter-web.version>
+        <lombok.version>1.18.30</lombok.version>
+        <transmittable-thread-local.version>2.14.2</transmittable-thread-local.version>
+        <dubbo-practice-component.version>1.0.0-SNAPSHOT</dubbo-practice-component.version>
     </properties>
 
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>com.wsf</groupId>
+                <artifactId>dubbo-practice-component</artifactId>
+                <version>${dubbo-practice-component.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>transmittable-thread-local</artifactId>
+                <version>${transmittable-thread-local.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
+            </dependency>
             <dependency>
                 <groupId>com.wsf</groupId>
                 <artifactId>dubbo-practice-client</artifactId>
