@@ -16,6 +16,8 @@ public class HelloController {
     @RequestMapping("/hello")
     public String hello(String name) {
         log.info("name => {}", name);
-        return greetingService.sayHello(name);
+
+        new Thread(() -> greetingService.sayHello(name)).start();
+        return "success";
     }
 }
