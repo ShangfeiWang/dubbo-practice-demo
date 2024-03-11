@@ -21,6 +21,7 @@
         <module>dubbo-practice-provider-base</module>
         <module>dubbo-practice-client</module>
         <module>dubbo-practice-component</module>
+        <module>mybatis-source-code-analysis</module>
     </modules>
 
     <properties>
@@ -35,6 +36,9 @@
         <lombok.version>1.18.30</lombok.version>
         <transmittable-thread-local.version>2.14.2</transmittable-thread-local.version>
         <dubbo-practice-component.version>1.0.0-SNAPSHOT</dubbo-practice-component.version>
+        <mysql-connector-java.version>8.0.15</mysql-connector-java.version>
+        <mybatis-version>3.5.7</mybatis-version>
+
     </properties>
 
     <dependencyManagement>
@@ -88,6 +92,17 @@
                 <groupId>org.apache.curator</groupId>
                 <artifactId>curator-recipes</artifactId>
                 <version>${curator-recipes.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql-connector-java.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.mybatis</groupId>
+                <artifactId>mybatis</artifactId>
+                <version>${mybatis-version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
